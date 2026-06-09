@@ -1,59 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brasília F.C - Aluguel de Campo</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Society F.C</title>
 
-  <style>
-    :root {
+<style>
+:root {
       --azul: #0A3D91;
       --amarelo: #FFD700;
       --branco: #FFFFFF;
       --cinza: #f5f5f5;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Arial, sans-serif;
-    }
+body {
+  margin:0;
+  font-family: Arial;
+}
 
-    body {
-      background: var(--branco);
-      color: #333;
-    }
-
-    header {
-      background: var(--azul);
-      color: var(--branco);
-      padding: 20px;
-      text-align: center;
-    }
+header {
+  background: var(--azul);
+  color:white;
+  text-align:center;
+  padding:5px;
+}
 
     header h1 {
       font-size: 28px;
       letter-spacing: 1px;
-    }
+}
 
-    .hero {
-      background-color: #ffffff;
-      color: rgb(7, 0, 70);
-      text-align: center;
-      padding: 80px 20px;
-    }
+.hero {
+  background-color: #ffffff;
+  color: rgb(7, 0, 70);
+  justify-content: center;
+  text-align: center;
+  padding: 80px 20px;
+}
 
-    .hero h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+}
 
-    .hero p {
-      margin-bottom: 20px;
-    }
+.hero p {
+  margin-bottom: 20px;
+}
 
-    .btn {
+h1 {
+  margin-bottom: 20px;
+}
+
+input, button {
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  margin: 5px;
+}
+
+#horarios {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.horario {
+  width: 80px;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.livre {
+  background: #1e90ff;
+}
+
+.ocupado {
+  background: #ccc;
+  color: #555;
+  cursor: not-allowed;
+}
+
+#status {
+  margin-top: 10px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+.btn {
       background: var(--amarelo);
       color: #000;
       padding: 12px 25px;
@@ -63,10 +99,11 @@
       font-weight: bold;
     }
 
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+
+section {
+  padding: 50px 20px;
+  text-align: center;
+}
 
     .cards {
       display: flex;
@@ -90,6 +127,8 @@
     .benefits {
       background: var(--azul);
       color: white;
+      text-align: center;
+      justify-content: center;
     }
 
     .benefits ul {
@@ -114,6 +153,7 @@
 
     footer {
       background: #111;
+      width: 100%;
       color: white;
       text-align: center;
       padding: 20px;
@@ -124,6 +164,7 @@
         font-size: 24px;
       }
     }
+
 #horarios {
   display: flex;
   flex-wrap: wrap;
@@ -157,15 +198,14 @@
   color: #555;
   cursor: not-allowed;
 }
-    
-  </style>
+
+</style>
 </head>
+
 <body>
 
-
-
 <header>
-  <h1>Brasília F.C</h1>
+  <h1>Society F.C</h1>
 </header>
 <script>
 function irParaCalendario() {
@@ -175,10 +215,11 @@ function irParaCalendario() {
 }
 </script>
 <section class="hero">
-  <img src="brasilia.jfif" alt="Brasília F.C" 
-  style="margin-top:-80px;width:auto; max-height:300px; object-fit:cover; border-radius:10px;">
+  <img src="logo.png" alt="Society F.C" 
+  style="margin: -80px 0 0 0; max-height:300px; border-radius:10px;">
   <br>
-<button onclick="irParaCalendario()" class="btn" target="_blank">
+<button onclick="irParaCalendario()" 
+  class="btn" target="_blank">
   Reservar o Campo
 </button>
 <br><br>
@@ -189,10 +230,11 @@ function irParaCalendario() {
 
 
 
+
   <section class="benefits">  
-    <h2>Sobre o Brasília F.C</h2><br>
+    <h2>Sobre o Society F.C</h2>
     <p>
-     O Brasília FC, fundado em 20 de maio de 1964, é um verdadeiro símbolo da tradição esportiva 
+     O Society FC, fundado em 2 de maio de 2002, é um verdadeiro símbolo da tradição esportiva 
      na várzea. Ao longo de décadas, construiu uma história marcada por conquistas, dedicação e 
      amor pelo futebol, tornando-se referência dentro e fora das quatro linhas.
         <br><br>
@@ -201,12 +243,11 @@ function irParaCalendario() {
     desenvolvimento do futebol vai além das equipes masculinas, sendo também protagonista no cenário 
     feminino, onde acumula títulos e incentiva a participação e o crescimento das mulheres no esporte.
     <br><br>
-    Mais do que um clube, o Brasília FC é um ponto de encontro, uma paixão compartilhada e um legado 
+    Mais do que um clube, o Society FC é um ponto de encontro, uma paixão compartilhada e um legado 
     que atravessa gerações. Sua história continua sendo escrita a cada jogo, a cada campeonato e a 
     cada novo talento que veste seus núcleos com orgulho.
     </p>
   </section>
-
 
 
 
@@ -246,7 +287,6 @@ function irParaCalendario() {
 
 
 
-
   <section class="benefits">
     <h2>Estrutura Completa</h2>
     <ul>
@@ -266,10 +306,10 @@ function irParaCalendario() {
 
   <section>
     <h2>Galeria</h2>
-    <div class="gallery">
-      <img src="unnamed.webp">
-      <img src="unnamed (1).webp">
-      <img src="unnamed (2).webp">
+    <div class="gallery" style="display: column; gap: 10px; justify-content: center;">
+      <img src="campdia.png">
+      <img src="campnoite.png">
+      <img src="social.png">
     </div>
   </section>
 
@@ -279,14 +319,13 @@ function irParaCalendario() {
 
 
 
-
 <section class="benefits">
     <h2>Localização</h2>
-    <br>
-      <p style="text-align: center;">  Rua Amâncio Pedro de Oliveira, 385 <br>
-        Arena Brasília</p>
+
+      <p style="text-align: center;">  Praça Charles Miller - Pacaembu, São Paulo - SP<br>
+        Arena Society FC</p>
     <div style="text-align:center; margin-top:30px;">
-        <a href="https://www.google.com/maps/place/Arena+Bras%C3%ADlia/@-23.6519794,-46.7474365,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce51e8f241656d:0x43e85c0551955f47!8m2!3d-23.6519794!4d-46.7474365!16s%2Fg%2F11q2xqn55z?entry=ttu&g_ep=EgoyMDI2MDQxMy4wIKXMDSoASAFQAw%3D%3D"
+        <a href="https://www.google.com/maps/place/pacaembu+estadio/data=!4m2!3m1!1s0x94ce5825e5ce392b:0xa1bf631ab482f725?sa=X&ved=1t:242&ictx=111"
            target="_blank"
            class="btn">
            Ver no Google Maps
@@ -305,18 +344,13 @@ function irParaCalendario() {
 </section>
 
 
-
-
-
-
-
-
-
 <section id="calendario">
 <h1>Reservar Campo</h1>
 
-<input type="date" id="dataSelecionada">
-<button onclick="renderHorarios()">Ver horários</button>
+<input type="date" id="dataSelecionada" style="padding:10px; border-radius:5px; border:none;">
+<button onclick="renderHorarios()" 
+style="padding:10px; border-radius:5px; border:none; background-color: #0A3D91; color: white;"
+>Ver horários</button>
 
 <div id="status">Aguardando seleção de data...</div>
 
@@ -327,7 +361,7 @@ const CSV_URL = "https://docs.google.com/spreadsheets/d/e/2PACX-1vR_N2wfeV29sD-n
 const numero = "5511987186358";
 
 const horariosBase = [
-  "18:00","19:00","20:00","21:00","22:00"
+  "09:00","10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00"
 ];
 
 let cache = {};
@@ -421,14 +455,9 @@ setInterval(async () => {
 </script>
 </section>
 
-
-
-
-
-
-  <footer>
-    <p>© 2026 Brasília F.C - Todos os direitos reservados</p>
-  </footer>
-
 </body>
 </html>
+
+
+
+
